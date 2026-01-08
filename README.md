@@ -258,3 +258,13 @@ jsp和jspx类型都支持关键字混淆功能，jsp仅支持Unicode编码混淆
 
 
 
+# 可能遇到的问题
+
+### javac没有权限
+
+因为项目内置了一个javac用于编译java类文件，所以需要给javac可执行权限
+
+```
+chmod +x router_modules\webshellmanager_router\java\payload\jdk\bin\javac
+```
+
