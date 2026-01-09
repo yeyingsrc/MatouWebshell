@@ -7,7 +7,9 @@ MatouWebshell 是一个基于 Vue 3 和 Python 开发的, 针对webshell利用�
 
 
 
-# 项目部署
+# 项目启动
+
+## elf二进制文件
 
 由于项目是使用GLIBC_2.38进行编译，所以建议在如下版本以上的系统上运行：
 
@@ -35,6 +37,24 @@ MatouWebshell 是一个基于 Vue 3 和 Python 开发的, 针对webshell利用�
 然后浏览器访问`http://localhost:6324/`
 
 ![image-20251216222452609](README/image-20251216222452609.png)	
+
+
+
+## docker镜像
+
+拉取docker镜像
+
+```
+docker pull henry404/matouwebshell:1.0
+```
+
+
+
+运行docker容器
+
+```
+docker run -it --rm -p 5001:5001  -v matou_data:/app/router_modules/webshellmanager_router/data henry404/matouwebshell
+```
 
 
 
@@ -252,7 +272,7 @@ jsp和jspx类型都支持关键字混淆功能，jsp仅支持Unicode编码混淆
 
 # 更新日志
 
-若有bug或者建议请反馈至issue
+若有bug、功能上的建议等请反馈至issue，主打一个听劝
 
 **Todo.....**
 
